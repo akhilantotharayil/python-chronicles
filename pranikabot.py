@@ -16,6 +16,7 @@ gif_links = [
 
 # Chatbot greets
 print(f"{bot_name}: Hie")
+print("Facing issue in gitlab pipeline build issue\n")  # Added line
 
 # Simulate user response
 user_response = ""  # empty string simulates no response from Akhil
@@ -25,9 +26,9 @@ if user_response == "":
     print(f"\nNo response from {user_name}...")
     print(f"{bot_name} becomes furious!\n")
     
-    # Furious message: print one character per line
-    furious_message = "Kya hua? Are you there?"
-    for char in furious_message:
+    # Furious message: vertical spelling of "O y e H e l l o . . . ."
+    furious_message = "O y e H e l l o . . . ."
+    for char in furious_message.replace(" ", ""):  # Remove spaces to print each character vertically
         print(char)
         time.sleep(0.2)
     
