@@ -1,0 +1,19 @@
+'''Create a class 'Employees' and salary and increment properties to it.
+    Write a method 'salaryAfterIncrement' method with a @property decorator with a setter which chnages the 
+    value of increment based on the salary.Program saved as 11_Employees.py'''
+
+class Employee:
+    salary = 234
+    increment = 20
+    @property
+    def salaryAfterIncrement(self):
+        return (self.salary + self.salary * (self.increment/100))
+    
+    @salaryAfterIncrement.setter
+    def salaryAfterIncrement(self,salary):
+        self.increment = ((salary/self.salary)-1)*100
+    
+e = Employee()
+print(e.salaryAfterIncrement)
+e.salaryAfterIncrement = 290
+print(e.increment)
