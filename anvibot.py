@@ -5,7 +5,7 @@ import random
 user_name = "Akhil"
 
 # Chatbot name
-bot_name = "Pranika"
+bot_name = "AnviBot"
 
 # List of random GIF links
 gif_links = [
@@ -35,7 +35,7 @@ if user_response == "":
     print(f"{bot_name}:")
     for char in furious_message.replace(" ", ""):
         print(char)
-        time.sleep(1)
+        time.sleep(3)
 
     print()  # Line break before GIFs
 
